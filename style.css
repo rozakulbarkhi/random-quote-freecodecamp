@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600&display=swap');
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container #title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  color: white;
+}
+
+#quote-box {
+  padding: 24px;
+  width: 360px;
+  height: 240px;
+  border: 3px solid #87C4FF;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#quote-box #text {
+  min-height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#quote-box #author {
+  min-height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+#quote-box #author::before {
+  content: "";
+  margin: 0 8px;
+  height: 2px;
+  width: 12px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote-box #button {
+  min-height: 15%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#quote-box #button a {
+  text-decoration: none;
+}
+
+#quote-box #button #new-quote {
+  background-color: #39A7FF;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: .8rem;
+}
+
+#quote-box #button #new-quote:hover {
+  background-color: #2a74b0;
+}
+
+#quote-box #button #tweet-quote {
+  background-color: #39A7FF;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: .8rem;
+}
+
+#quote-box #button #tweet-quote:hover {
+  background-color: #2a74b0;
+}
